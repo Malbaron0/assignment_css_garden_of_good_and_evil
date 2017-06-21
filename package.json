@@ -1,0 +1,26 @@
+{
+  "name": "assignment_css_garden_of_good_and_evil",
+  "version": "1.0.0",
+  "description": "Playing around with cookies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malbaron0/assignment_css_garden_of_good_and_evil.git"
+  },
+  "author": "Malyar Baron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Malbaron0/assignment_css_garden_of_good_and_evil/issues"
+  },
+  "homepage": "https://github.com/Malbaron0/assignment_css_garden_of_good_and_evil#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0"
+  }
+}
