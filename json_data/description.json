@@ -1,0 +1,45 @@
+{
+    "good": {
+        "likes": ["The Sun", "Peace", "Harmony", "Laughter", "Destroying Evil"],
+        "dislikes": ["Darkness", "Poverty", "selfisness", "Asparagus "],
+        "Biography" : "This person loves doing good that is all there is to it",
+        "resume": {
+            "paladin" : {
+                "para1": "Trained young fellow paladins in the art of holy war",
+                "para2": "Restored a old relic sword named Asgbringer",
+                "para3": "Stopped the resurrection of unholy fiends caused by the king of the lich"
+            },
+            "Druid" : {
+                "para1": "Maintain peace and tranquility of the forest",
+                "para2": "Mediate into the emerald dream",
+                "para3": "Heal the wounded with the power of the forest"
+            },
+            "Comedian": {
+                "para1": "Performed for charity at the comedy cellar in NY",
+                "para2": "Still on tour and making people laugh all over the country" 
+            }
+        }
+    },
+    "evil": {
+        "likes": ["Darkness", "Death", "Destruction", "Pain", "Akuma"],
+        "dislikes": ["Sharing", "Light", "Life", "Asparagus "],
+        "Biography" : "This person was born right some good person was born, he/she exists as yang to the yin",
+        "resume": {
+            "Warlock" : {
+                "para1": "Summon demons from the dark beyond",
+                "para2": "Corrupt the weak minded",
+                "para3": "Apply curses and other dark magic on your enemies"
+            },
+            "Death Knight" : {
+                "para1": "Ressurect the dead into ghouls",
+                "para2": "Bring a plague upon innocent people and their villages",
+                "para3": "Help them warlocks"
+            },
+            "The Joker": {
+                "para1": "Give batman a tough time",
+                "para2": "Have psycopathic thoughts and act upon them",
+                "para3": "Bring the joy of craziness to people of gotham" 
+            }
+        }
+    }
+}
