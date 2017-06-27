@@ -1,6 +1,8 @@
 const express = require("express");
 const cookieParser = require('cookie-parser');
 const intentMiddleware = require('./middleware/intent');
+const favoritesMiddleware = require('./middleware/favorites');
+const insanityMiddleware = require('./middleware/insanity');
 
 const app = express();
 app.use(cookieParser());
@@ -19,24 +21,29 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 //custom middleware
 app.use(intentMiddleware);
+app.use(favoritesMiddleware);
+app.use(insanityMiddleware);
 
 
 app.get('/', (req , res) => {
-    console.log(req.intent);
-    
-    console.log(req.intentDescription);
-    res.render('index');
+
+    const description = req.intentDescription
+    res.render('index', {description,
+        intent: req.intent        
+    });     
 });
 
 app.post('/', (req, res) => {
+    
     //keep these in a cookie and load with this setting
-    console.log(req.body.food); 
-    console.log(req.body.position);
-    console.log(req.body.colorPicker);
-    console.log(req.body.insanity);
+    res.cookie("intent", req.body.position);
+    res.cookie("food", req.body.food);
+    res.cookie("color", req.body.colorPicker);
+    res.cookie("insanity", req.body.insanity);
+    
     res.redirect("back");
 });
 
-app.listen(4000, () => {
+app.listen(3000, () => {
     console.log('Listening');
 })

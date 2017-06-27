@@ -2,7 +2,7 @@
     "good": {
         "likes": ["The Sun", "Peace", "Harmony", "Laughter", "Destroying Evil"],
         "dislikes": ["Darkness", "Poverty", "selfisness", "Asparagus "],
-        "Biography" : "This person loves doing good that is all there is to it",
+        "biography" : "This person loves doing good that is all there is to it",
         "resume": {
             "paladin" : {
                 "para1": "Trained young fellow paladins in the art of holy war",
@@ -23,7 +23,7 @@
     "evil": {
         "likes": ["Darkness", "Poverty", "selfisness", "Asparagus "],
         "dislikes": ["The Sun", "Peace", "Harmony", "Laughter", "Destroying Evil"],
-        "Biography" : "This person was born right some good person was born, he/she exists as yang to the yin",
+        "biography" : "This person was born right some good person was born, he/she exists as yang to the yin",
         "resume": {
             "Warlock" : {
                 "para1": "Summon demons from the dark beyond",
