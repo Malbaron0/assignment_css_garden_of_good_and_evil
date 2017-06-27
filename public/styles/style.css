@@ -1,0 +1,79 @@
+.well {
+    background: rgb(51,122,183) !important;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-container div {
+    margin: 10px;
+}
+
+.description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.header h1 {
+    font-size: 120px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.list-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.likes h3{
+    text-decoration: underline;
+}
+
+.dislikes h3{
+    text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 40px;
+}
+
+.bio {
+    margin-top: 40px;
+}
+
+.job-title {
+    margin: 50px 0px;
+}
+
+.job-title h3 {
+    text-decoration: underline;
+}

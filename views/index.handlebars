@@ -1,64 +1,86 @@
-<div>
-    <form action="/" method="POST">
+<div class="container">
+    <div class="child">
+        <form class="form-inline form-container" action="/" method="POST">
+            <div class="intent-container">
+                <label for="good">Good</label>
+                <input class="form-check" type="radio" name="position" id="good" value="good">
 
-        <label for="good" >Good</label>
-        <input type="radio" name="position" id="good" value="good" >
+                <label for="evil">Evil</label>
+                <input class="form-check" type="radio" name="position" id="evil" value="evil">
+            </div>
 
-        <label for="evil">Evil</label>
-        <input type="radio" name="position" id="evil" value="evil">
-        
-        <label for="colorPicker">Favorite Color</label>
-        <select name="colorPicker" id="colorPicker">
-            <option value="blue">Blue</option>
-            <option value="yellow">yellow</option>
-            <option value="red">red</option>
-            <option value="brown">brown</option>
-        </select>
+            <div class="color-container">
+                <label for="colorPicker">Favorite Color</label>
+                <select class="form-control" name="colorPicker" id="colorPicker">
+                <option value="blue">Blue</option>
+                <option value="yellow">yellow</option>
+                <option value="red">red</option>
+                <option value="brown">brown</option>
+            </select>
+            </div>
 
-        <label for="food">Favorite Food</label>
-        <input type="text" name="food" id="food">
+            <div class="food-container">
+                <label for="food">Favorite Food</label>
+                <input class="form-control" type="text" name="food" id="food">
+            </div>
 
-        <label for="insanity">Insanity</label>
-        <input type="range" id="insanity" name="insanity" min="0" max="100">
+            <div class="insanity-container">
+                <label for="insanity">Insanity</label>
+                <input type="range" id="insanity" name="insanity" min="0" max="100">
+            </div>
 
-        {{!--<label for="color">Favorite Color</label>
-        <input type="dropdown" name="color" id="color">--}}
-
-
-        <input type="submit" name="submit" value="Submit">
-
-    </form>
-
-    <div><h1>{{intent}}</h1></div>
-
-    <div>
-        <h2>Dislikes And Likes</h2>
-        <div><h3>Likes</h3>
-        <ul>
-            {{#each description.likes as |like|}}
-               <li>{{like}}</li>
-            {{/each}}
-        </ul>
-        <div><h3>Dislikes</h3>
-        <ul>
-            {{#each description.dislikes as |dislike|}}
-               <li>{{dislike}}</li>
-            {{/each}}
-        </ul>
+            <div class="btn-container">
+                <input class="btn btn-success" type="submit" name="submit" value="Submit">
+            </div>
+        </form>
     </div>
 
-    <div>
-        <h2>Biography</h2> 
-        <p>{{description.biography}}
-    </div>
+    <div class="description-container">
+        <div class="info">
+            <div class="header">
+                <h1>{{intent}}</h1>
+            </div>
 
-    <div>
-        <h2>Resume</h2>
-        {{#each description.resume as |positions|}}
-                <h3>position: {{@key}}  </h3>
-                {{#each positions}}
-                    <p>{{this}}</p>
+            <div class="content well well-lg">
+                <h2>Dislikes And Likes</h2>
+                <div class="list-container">
+                    <div class="likes">
+                        <h3>Likes</h3>
+                        <ul>
+                            {{#each description.likes as |like|}}
+                            <li>{{like}}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
+
+                    <div class="dislikes">
+                        <h3>Dislikes</h3>
+                        <ul>
+                            {{#each description.dislikes as |dislike|}}
+                            <li>{{dislike}}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content well well-lg">
+                <h2>Biography</h2>
+                <p class="bio">{{description.biography}}
+            </div>
+
+            <div class="content well well-lg">
+                <h2>Resume</h2>
+                {{#each description.resume as |positions|}}
+                    <div class="job-title">
+                        <h3>{{@key}} </h3>
+                        {{#each positions}}
+                            <p>{{this}}</p>
+                        {{/each}}
+                    </div> 
                 {{/each}}
-        {{/each}}
+            </div>
+        </div>
+
     </div>
 </div>

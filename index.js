@@ -19,6 +19,9 @@ app.set('view engine', 'handlebars');
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: false}));
 
+//setup style css
+app.use(express.static(__dirname + '/public'));
+
 //custom middleware
 app.use(intentMiddleware);
 app.use(favoritesMiddleware);
