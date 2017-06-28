@@ -26,7 +26,7 @@
 
             <div class="insanity-container">
                 <label for="insanity">Insanity</label>
-                <input type="range" id="insanity" name="insanity" min="0" max="100">
+                <input type="range" id="insanity" name="insanity" min="1" max="5">
             </div>
 
             <div class="btn-container">
@@ -37,12 +37,12 @@
 
     <div class="description-container">
         <div class="info">
-            <div class="header">
+            <div class="insanity-{{insanity}} header">
                 <h1>{{intent}}</h1>
             </div>
 
-            <div class="content well well-lg">
-                <h2>Dislikes And Likes</h2>
+            <div class="insanity-{{insanity}} content well well-lg">
+                <h2>Preferences</h2>
                 <div class="list-container">
                     <div class="likes">
                         <h3>Likes</h3>
@@ -64,12 +64,12 @@
                 </div>
             </div>
 
-            <div class="content well well-lg">
+            <div class="insanity-{{insanity}} content well well-lg">
                 <h2>Biography</h2>
                 <p class="bio">{{description.biography}}
             </div>
 
-            <div class="content well well-lg">
+            <div class="insanity-{{insanity}} content well well-lg">
                 <h2>Resume</h2>
                 {{#each description.resume as |positions|}}
                     <div class="job-title">

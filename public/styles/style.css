@@ -1,3 +1,9 @@
+h3 {
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+}
+
 .well {
     background: rgb(51,122,183) !important;
     color: white;
@@ -33,17 +39,20 @@
 }
 
 .header h1 {
-    font-size: 120px;
+    font-size: 140px;
+    font-weight: bold;
     font-family: 'Amatic SC', cursive;
 }
 
 .content {
     text-align: center;
+    width: 100%;
 }
 
 .content h2 {
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Amatic SC', cursive;
+    font-weight: bold;
 }
 
 .list-container{
@@ -54,10 +63,14 @@
 
 .likes h3{
     text-decoration: underline;
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
 }
 
 .dislikes h3{
     text-decoration: underline;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
 }
 
 ul {
@@ -76,4 +89,102 @@ ul {
 
 .job-title h3 {
     text-decoration: underline;
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.insanity-1 {
+    transform: rotate(0deg);
+}
+.insanity-1 h3 {
+    transform: rotate(0deg);
+}
+
+.insanity-1 h2 {
+    transform: rotate(0deg);
+}
+.insanity-2 {
+    font-family: 'Amatic SC', cursive;
+    transform: rotate(20deg);
+}
+
+.insanity-3 {
+    font-family: 'League Script' !important;
+    transform: rotate(50deg);
+}
+
+.insanity-3 h3{
+    font-family: 'League Script' !important;
+    transform: rotate(50deg);
+}
+
+.insanity-3 h2{
+    font-family: 'League Script' !important;
+    transform: rotate(50deg);
+}
+
+.insanity-4 {
+    font-family: 'League Script' !important;
+    transform: rotate(80deg);
+}
+
+.insanity-4 h3{
+    font-family: 'League Script' !important;
+    transform: rotate(80deg);
+}
+
+.insanity-4 h2{
+    font-family: 'League Script' !important;
+    transform: rotate(80deg);
+}
+
+
+.insanity-5 {
+    font-family: 'League Script' !important;
+    transform: rotate(120deg);
+    background: rebeccapurple;
+}
+
+.insanity-5 h3{
+    font-family: 'League Script' !important;
+    transform: rotate(1200deg);
+    background: red;
+}
+
+.insanity-5 h2{
+    font-family: 'League Script' !important;
+    transform: rotate(120deg);
+    background: yellow;
+}
+
+
+
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: rgb(51,122,183);
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
 }

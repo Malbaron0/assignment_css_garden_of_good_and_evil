@@ -32,7 +32,8 @@ app.get('/', (req , res) => {
 
     const description = req.intentDescription
     res.render('index', {description,
-        intent: req.intent        
+        intent: req.intent,
+        insanity: req.insanity        
     });     
 });
 
